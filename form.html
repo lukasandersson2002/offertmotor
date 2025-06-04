@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Offertförfrågan - Laddbox</title>
+</head>
+<body>
+  <h1>Offertförfrågan - Laddbox</h1>
+  <form action="/generate-offer" method="POST">
+    Namn: <input type="text" name="name" required><br><br>
+    E-post: <input type="email" name="email" required><br><br>
+    Adress: <input type="text" name="address" required><br><br>
+    Typ av fastighet: 
+    <select name="property_type">
+      <option>Villa</option>
+      <option>Bostadsrättsförening</option>
+      <option>Företag</option>
+    </select><br><br>
+    Antal laddpunkter: <input type="number" name="charging_points" min="1" required><br><br>
+    Har du trefas-el?
+    <select name="three_phase">
+      <option>Ja</option>
+      <option>Nej</option>
+      <option>Vet ej</option>
+    </select><br><br>
+    Övriga önskemål:<br>
+    <textarea name="notes" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Skicka förfrågan">
+  </form>
+</body>
+</html>
