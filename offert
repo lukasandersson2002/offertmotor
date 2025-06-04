@@ -1,0 +1,7 @@
+offertmotor/
+├── app.py
+├── requirements.txt
+├── form.html
+├── templates/
+│   └── admin.html
+└── README.md
