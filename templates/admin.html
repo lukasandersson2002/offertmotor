@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adminpanel - Förfrågningar</title>
+</head>
+<body>
+  <h1>Inkomna förfrågningar</h1>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <th>Namn</th>
+      <th>Email</th>
+      <th>Fastighet</th>
+      <th>Laddpunkter</th>
+      <th>Trefas</th>
+      <th>Anteckningar</th>
+    </tr>
+    {% for row in data %}
+    <tr>
+      {% for col in row %}
+      <td>{{ col }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
