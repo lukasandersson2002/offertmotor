@@ -9,8 +9,8 @@ app = Flask(__name__)
 # Mail-konfiguration (fyll i med din info)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = 'din.epost@gmail.com'    # Ändra
-app.config['MAIL_PASSWORD'] = 'ditt-app-losenord'      # Ändra
+app.config['MAIL_USERNAME'] = 'lukasa020930@gmail.com'    
+app.config['MAIL_PASSWORD'] = 'firn psbk mtve qoye'      
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 
